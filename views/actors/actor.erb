@@ -1,0 +1,7 @@
+<% @actors.each do |actor| %>
+	<h1> <%= actor ['name'] if actor['id'].to_s == @actor_id %> </h1>
+<% end %>
+
+<% @movies_by_actor.each do |movie| %>
+	<li><a href="/movies/<%=movie['id']%>"> <%= movie['title'] %> </a></li>
+<% end %>

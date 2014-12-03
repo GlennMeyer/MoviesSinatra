@@ -1,0 +1,5 @@
+<div>
+	<% @actors.each do |actor| %>
+		<li> <a href="/actors/<%=actor['id']%>"> <%= actor['name'] %> </li>
+	<% end %>
+</div>

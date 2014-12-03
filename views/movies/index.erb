@@ -1,0 +1,25 @@
+<!-- <li href="/movies/1">Heat</li>
+<li href="/movies/2">Casino</li>
+<li href="/movies/3">Saving Private Ryan</li>
+<li href="/movies/4">The Dark Knight Rises</li>
+<li href="/movies/5">Philadelphia</li>
+<li href="/movies/6">The Usual Suspects</li>
+<li href="/movies/7">Star Dust</li>
+<li href="/movies/8">The Godfather 2</li>
+<li href="/movies/9">The Devil's Advocate</li>
+<li href="/movies/10">The Matrix</li>
+<li href="/movies/11">The Weather Man</li>
+<li href="/movies/12">The Family Man</li>
+<li href="/movies/13">The Game</li>
+<li href="/movies/14">Seven</li>
+<li href="/movies/15">Memento</li>
+<li href="/movies/16">Lawless</li>
+<li href="/movies/17">Snatch</li>
+<li href="/movies/18">Traffic</li>
+<li href="/movies/19">Mystic River</li> -->
+
+<div>
+	<% @movies.each do |movie| %>
+		<li><a href="/movies/<%=movie['id']%>"><%=movie['title']%></li>
+	<% end %>
+</div>
